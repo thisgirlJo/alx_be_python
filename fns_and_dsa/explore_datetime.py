@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 def display_current_datetime(current_date):
     current_date = datetime.now()
     print(f{YYYY-MM-DD HH:MM:SS})
