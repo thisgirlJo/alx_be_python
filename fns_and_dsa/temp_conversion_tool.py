@@ -14,7 +14,12 @@ confirm = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 if confirm == "C":
     result = convert_to_fahrenheit(temp)
-    print(temp,confirm ,"is", result)
-else:
+    print(temp,confirm ,"is", result,"F")
+elif confirm == "F":
     result = convert_to_celsius(temp)
-    print(temp,confirm, "is", result)
+    print(temp,confirm, "is", result, "C")
+else:
+    if temp != "%d":
+        print("Invalid temperature. Please enter a numeric value.")
+    if confirm != "C" or confirm != "F":
+        print("Invalid temperature. Please enter either C or F.")
