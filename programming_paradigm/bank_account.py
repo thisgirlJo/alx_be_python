@@ -1,6 +1,6 @@
 class BankAccount:
     def __init__(self, account_balance, deposit, withdraw, display_balance):
-        self.account_balance = account_balance
+        self.account_balance = 0
         self.deposit = deposit
         self.withdraw = withdraw
         self.display_balance = display_balance
