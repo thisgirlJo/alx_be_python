@@ -3,7 +3,7 @@
 #Use command line arguments to interact with instances of this class.
 
 class BankAccount:
-    def __init__(self):
+    def __init__(self, account_balance):
         self.account_balance = 0 #Default Attribute Value
     
     def deposit(self, amount):
@@ -12,10 +12,11 @@ class BankAccount:
         return self.account_balance
 
     def withdraw(self, amount):
-        amount = float(input("Enter Amount to be Deposited: "))
-        self.account_balance -= amount
+        amount = float(input("Enter Amount to Withdraw: "))
+        self.account_balance = self.account_balancd - amount
         return self.account_balance
 
     def display_balance(self):
-        return f"Current Balance: $", {self.account_balance}
+        print("Current Balance: $",self.account_balance)
+        return
     
