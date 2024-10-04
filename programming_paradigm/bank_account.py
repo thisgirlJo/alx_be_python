@@ -7,12 +7,10 @@ class BankAccount:
         self.account_balance = 0 #Default Attribute Value
     
     def deposit(self, amount):
-        amount = float(input("Enter Amount to be Deposited: "))
         self.account_balance += amount
         return self.account_balance
 
     def withdraw(self, amount):
-        amount = float(input("Enter Amount to Withdraw: "))
         self.account_balance = self.account_balancd - amount
         return self.account_balance
 
