@@ -1,21 +1,19 @@
-#Understand the fundamentals of OOP in Python by 
-#implementing a BankAccount class that encapsulates banking operations.
-#Use command line arguments to interact with instances of this class.
+#Simple Bank Account Class
 
 class BankAccount:
     def __init__(self, account_balance):
-        self.account_balance = 0 #Default Attribute Value
+        self.account_balance = account_balance #Default Attribute Value
     
     def deposit(self, amount):
         self.account_balance += amount
-        return self.account_balance
 
     def withdraw(self, amount):
         if self.account_balance >= amount:
             self.account_balance = self.account_balance - amount
-        return self.account_balance
+            return self.account_balance
+        else:
+            return self.account_balance
 
     def display_balance(self):
         print("Current Balance: $",self.account_balance)
-        return
     
