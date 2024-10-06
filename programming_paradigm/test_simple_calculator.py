@@ -13,17 +13,17 @@ class Test(unittest.TestCase):
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(-2,-2), -4)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         """The the subtraction method"""
         self.assertEqual(self.calc.subtract(2, 3), -1)
         self.assertEqual(self.calc.subtract(5, -3), 8)
         self.assertEqual(self.calc.subtract(-2, 3), -5)
     
-    def test_multiply(self):
+    def test_multiplication(self):
 
         self.assertEqual(self.calc.multiply(4, 2), 8)
         self.assertEqual(self.calc.multiply(-5, 2), -10)
     
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(4, 2), 2)
         self.assertEqual(self.calc.divide(6, 2), 3)
