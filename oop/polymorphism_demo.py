@@ -1,8 +1,9 @@
 import math 
 class  Shape:
-    def __init__(self):
-        pass
-    
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
     def area(self):
         raise NotImplementedError
 
