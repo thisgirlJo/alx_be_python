@@ -1,6 +1,6 @@
 import math
 
-class  Shape:
+class Shape:
     def __init__(self, len, breg):
         self.len = len
         self.breg = breg
