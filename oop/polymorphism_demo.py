@@ -1,6 +1,6 @@
 import math
 
-class Shape:
+class  Shape:
     def __init__(self, len, breg):
         self.len = len
         self.breg = breg
@@ -20,4 +20,4 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * (self.radius * self.radius)
+        return math.pi * (self.radius** 2)
