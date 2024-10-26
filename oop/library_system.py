@@ -13,7 +13,7 @@ class EBook(Book):
     
     def __str__(self):
         super().__repr__()
-        return f"EBOOK: {self.title} by {self.author}, File Size: {self.file_size}"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}"
 
 
 class PrintBook(Book):
